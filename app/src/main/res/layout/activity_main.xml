@@ -30,7 +30,7 @@
         android:layout_marginBottom="31dp"
         android:ems="10"
         android:hint="Enter number"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/number2Text"
         app:layout_constraintStart_toStartOf="@+id/number2Text"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +43,7 @@
         android:layout_marginBottom="24dp"
         android:ems="10"
         android:hint="Enter number 2"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/number1Text" />

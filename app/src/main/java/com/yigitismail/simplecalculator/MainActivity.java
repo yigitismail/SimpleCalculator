@@ -29,48 +29,79 @@ public class MainActivity extends AppCompatActivity {
 
     public void sum(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        int result = number1 + number2;
+            resultText.setText("Enter Number");
 
-        resultText.setText("Result: " + result);
+        } else {
 
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
 
+            int result = number1 + number2;
 
+            resultText.setText("Result: " + result);
+
+        }
 
     }
 
     public void deduct(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        int result = number1 - number2;
+            resultText.setText("Enter Number");
 
-        resultText.setText("Result: " + result);
+        } else {
+
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+
+            int result = number1 - number2;
+
+            resultText.setText("Result: " + result);
+
+        }
+
 
     }
 
     public void multiply(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        int result = number1 * number2;
+            resultText.setText("Enter Number");
 
-        resultText.setText("Result: " + result);
+        } else {
+
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+
+            int result = number1 * number2;
+
+            resultText.setText("Result: " + result);
+
+        }
 
     }
 
     public void divide(View view){
 
-        int number1 = Integer.parseInt(number1Text.getText().toString());
-        int number2 = Integer.parseInt(number2Text.getText().toString());
+        if(number1Text.getText().toString().matches("") || number2Text.getText().toString().matches("")){
 
-        int result = number1 / number2;
+            resultText.setText("Enter Number");
 
-        resultText.setText("Result: " + result);
+        } else {
+
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+
+            int result = number1 / number2;
+
+            resultText.setText("Result: "+ result);
+
+        }
+
 
     }
 
